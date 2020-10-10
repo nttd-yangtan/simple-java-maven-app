@@ -11,7 +11,7 @@ public class Handler implements RequestHandler<Map<String,String>, String>{
   public String handleRequest(Map<String,String> event, Context context)
   {
     LambdaLogger logger = context.getLogger();
-    String response = new String("This is version 1");
+    String response = new String("This is version 002");
     return response;
   }
 }
