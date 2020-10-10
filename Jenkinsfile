@@ -20,7 +20,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'aws lambda update-function-code --function-name  jenkins-java-test --zip-file fileb:///root/target/java-basic-1.0-SNAPSHOT.jar' 
+                sh 'aws lambda update-function-code --function-name  jenkins-java-test --zip-file fileb:///root/target/java-basic-1.0-SNAPSHOT.jar --region ap-northeast-1' 
             }
         }
     }
